@@ -11,5 +11,9 @@ public class bookMain06 {
         bk1.sold(5);
         bk1.priceChange(60000);
         bk1.showInformation();
+
+        book06 bk2 = new book06("Self Reward", "Mahera Ayesha", 160, 29, 59000);
+        bk2.sold(11);
+        bk2.showInformation();
     }
 }
