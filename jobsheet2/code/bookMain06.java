@@ -2,12 +2,14 @@ public class bookMain06 {
     public static void main(String[] args) {
         // Objects for the first book
         book06 bk1 = new book06();
+        // filling object bk1
         bk1.title = "Today Ends Tomorrow Comes";
         bk1.author = "Denanda Pratiwi";
         bk1.page = 198;
         bk1.stock = 13;
         bk1.price = 71000;
 
+        // Accessing method
         // Display the first book information
         bk1.showInformation();
 
@@ -31,7 +33,7 @@ public class bookMain06 {
         bk2.showInformation();
 
         // Display the total price, discount, and paid price for the first book
-        int quantityBk1 = 3; // Replace with the number of books you want to count
+        int quantityBk1 = 3; // Replace with the number of books you want to calculate
         double totalBk1 = bk1.calculateTotalPrice(quantityBk1);
         double discountBk1 = bk1.calculateDiscount(totalBk1);
         double finalPriceBk1 = bk1.calculateFinalPrice(quantityBk1);

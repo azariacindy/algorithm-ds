@@ -4,6 +4,7 @@ public class book06 {
     int page;
     double stock, price;
 
+    // if the method does not return any value then use void
     void showInformation() {
         System.out.println("============================");
         System.out.println("Title: " + title);
@@ -35,20 +36,7 @@ public class book06 {
         System.out.println("Price changed successfully.");
     }
 
-    // default constructor
-    public book06() {
-
-    }
-
-    // constructor with parameters
-    public book06(String tit, String aut, int pg, double stk, double pric) {
-        title = tit;
-        author = aut;
-        page = pg;
-        stock = stk;
-        price = pric;
-    }
-
+    // 
     // Method to calculate total price
     double calculateTotalPrice(double quantity) {
         return price * quantity;
@@ -72,4 +60,18 @@ public class book06 {
         double discountAmount = totalPrice * discountRate;
         return totalPrice - discountAmount;
     }
+
+        // default constructor
+        public book06() {
+
+        }
+    
+        // constructor with parameters
+        public book06(String tit, String aut, int pg, double stk, double pric) {
+            title = tit;
+            author = aut;
+            page = pg;
+            stock = stk;
+            price = pric;
+        }
 }
