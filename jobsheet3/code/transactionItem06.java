@@ -1,8 +1,8 @@
 class transactionItem06 {
-    Product product;
+    product06 product;
     int quantity;
 
-    public TransactionItem(Product product, int quantity) {
+    public transactionItem06(product06 product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
